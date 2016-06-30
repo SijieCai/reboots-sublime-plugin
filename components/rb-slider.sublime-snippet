@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<RBSlider
+  checked={this.state.checked}
+  onChange={newValue=>this.setState({checked: newValue})}
+/>
+]]></content>
+  <tabTrigger>rb-slider</tabTrigger>
+</snippet>

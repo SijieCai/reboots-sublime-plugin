@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<RBStatusLabel label="label"
+    status="good | normal | warning | danger | abnormal | danger"
+    type="dot | triangle-top | triangle-bottom | triangle-left | triangle-right | rect"
+/>
+]]></content>
+  <tabTrigger>rb-status-label</tabTrigger>
+</snippet>

@@ -1,0 +1,6 @@
+<snippet>
+  <content><![CDATA[
+<RBSearchBar placeholder="${0}" onChange={()=>{}} onSearch={()=>{}}/>
+]]></content>
+  <tabTrigger>rb-search-bar</tabTrigger>
+</snippet>

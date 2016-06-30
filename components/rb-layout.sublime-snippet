@@ -1,0 +1,21 @@
+<snippet>
+  <content><![CDATA[
+<RBLayout>
+  <div className="rb-layout__top">
+     
+  </div>
+  <div className="rb-layout__bottom">
+    <div className="rb-layout__bottom__left">
+        
+    </div>
+    <div className="rb-layout__bottom__left">
+       
+    </div>
+    <div className="rb-layout__content">
+      
+    </div>
+  </div>
+</RBLayout>
+]]></content>
+  <tabTrigger>rb-layout</tabTrigger>
+</snippet>

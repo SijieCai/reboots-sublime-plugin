@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+import AuthRoute from 'rb-component';
+export default AuthRoute({
+  path: '${0}',
+  chunkLoader(cb) {
+    cb(
+    	require('./home')
+    );
+  }
+})
+]]></content>
+	<tabTrigger>rb-auth</tabTrigger>
+</snippet>

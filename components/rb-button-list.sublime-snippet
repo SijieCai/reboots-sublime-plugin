@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<RBButtonList 
+    items={this.state.items} 
+    label="按钮选项"
+    buttonLabelField="label"
+    onClick={item=>{
+      this.setState({activeItem: item}); console.log('item clicked', item);
+    }}
+    activeItem={this.state.activeItem}
+    disableFunc={item=>item.otherFields==='content3'}
+    activeButtonClassName="btn btn-primary"
+    buttonClassName="btn btn-default"
+/>
+]]></content>
+  <tabTrigger>rb-button-list</tabTrigger>
+</snippet>

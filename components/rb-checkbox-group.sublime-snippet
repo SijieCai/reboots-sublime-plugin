@@ -1,0 +1,17 @@
+<snippet>
+  <content><![CDATA[
+<RBCheckboxGroup 
+    label="label: "
+    items={[{value: 1, label: 'label'}, {value: 2, label: 'label'}, {value: 3, label: 'label'}]}
+    itemValue="value"
+    itemLabel="label"
+    checkAll
+    checkedValues={this.state.checkedValues}
+    onChange={(checkedValues, isCheckAll)=>{
+        this.setState({checkedValues}); // 选择状态完全由父组件控制，注释掉这一样将无法改变值
+        console.log('受控 值：', checkedValues, '  全选：', isCheckAll)
+    }}
+/>
+]]></content>
+  <tabTrigger>rb-checkbox-group</tabTrigger>
+</snippet>

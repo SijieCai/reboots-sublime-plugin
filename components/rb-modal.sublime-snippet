@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<RBModal
+    title="${0}"
+    show={this.state.showOkModal}
+    onHide={()=>this.setState({showOkModal: false})}
+>
+  <RBModal.Body>
+    Modal content
+  </RBModal.Body>
+  <RBModal.FooterYesNo
+      onNo={()=> {
+        this.setState({showOkModal: false});
+      }}
+  />
+</RBModal>
+]]></content>
+  <tabTrigger>rb-modal:confirm</tabTrigger>
+</snippet>

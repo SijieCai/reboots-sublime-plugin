@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+<RBModal
+    title="${0}"
+    show={this.state.showOkModal}
+    onHide={()=>this.setState({showOkModal: false})}
+>
+  <RBModal.BodyConfirm type="${1:danger | warning | success}">
+    你确定要删除吗？
+  </RBModal.BodyConfirm>
+  <RBModal.FooterOk
+      onOk={()=> {
+        this.setState({showOkModal: false});
+      }}
+  />
+</RBModal>
+]]></content>
+  <tabTrigger>rb-modal:confirm</tabTrigger>
+</snippet>

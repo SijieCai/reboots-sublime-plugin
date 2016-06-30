@@ -1,0 +1,30 @@
+<snippet>
+  <content><![CDATA[
+<RBTable paginationProps={
+      {prev: true, next: true, first: true, 
+      last: true, maxButtons: 5, selectPagesize: true, 
+      pagesizeOptions: [10, 20, 50, 100], hideOnePage: false}
+    }
+    totalCount={this.state.total}
+    pagesize={this.state.pagesize}
+    page={this.state.page} onPageSelect={this.onPageSelect}
+>
+  <thead>
+    <tr>
+      <th>title 1</th>
+      <th>title 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    {(this.state.list || []).map((item, i)=>
+      <tr key={i}>
+        <td>{item.value1}</td>
+        <td>{item.value2}</td>
+      </tr>
+    )}
+  </tbody>
+</RBTable>
+]]></content>
+  <tabTrigger>rb-table</tabTrigger>
+</snippet>
+
